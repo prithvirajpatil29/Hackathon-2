@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const wordDict = ['leet', 'code'];
+        var newrod = '';
+
+        function wordBreak(string, wordDict) {
+            for (i = 0; i < wordDict.length; i++) {
+                newrod += wordDict[i];
+            }
+            if (string == newrod) {
+                console.log('true');
+            } else {
+                console.log('false');
+            }
+        }
+        wordBreak('leetcode', wordDict);
+    </script>
+</body>
+
+</html>
